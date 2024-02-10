@@ -1,0 +1,18 @@
+body {
+    --token-b82f383f-f903-4760-8334-51b5d4e17d10: rgb(28, 28, 28);
+    --token-eaabc823-fb38-4d06-b216-4838943f8675: rgba(28, 28, 28, .75);
+    --token-e3302ab0-3aad-465d-8b24-46292b562971: rgba(28, 28, 28, .5);
+    --token-543b644d-b6d6-4d8f-8815-05ce7a76f4a2: rgba(28, 28, 28, 0);
+    --token-5c9cd35a-ca72-4ae3-acb6-3f4e08c9b389: rgb(255, 255, 255);
+    --token-87ecf07f-dfff-4497-9cf8-5ece0dd623e4: rgba(255, 255, 255, .75);
+    --token-314a4083-b63e-4117-a63d-b200d71acf1d: rgba(255, 255, 255, .5);
+    --token-86112b8f-7690-4360-9107-1b33785eec20: rgba(255, 255, 255, .3);
+    --token-ba903a4f-6b41-4adb-9267-fabd527c3a4f: rgba(255, 255, 255, .1);
+    --token-faa8809b-6cc5-4403-9e96-3923a237e228: hsla(0, 0%, 100%, .05);
+    --token-22667031-ff50-439a-9135-8e401c481918: rgba(255, 255, 255, 0);
+    --token-fd0bf5fd-8112-46ae-b009-7df9784c8bd7: rgb(23, 23, 23);
+    --token-a3d06eb9-432c-4fd3-b53e-8ee15b56b9b4: rgb(46, 46, 46);
+    --token-dff62042-7efc-465e-96db-b22d16fb73aa: rgb(212, 212, 212);
+    --token-4a5d08d7-b41d-4b3c-bacb-b98815549889: rgb(44, 44, 44);
+    --token-0e126b06-efe2-4318-8cf6-a714f5589896: rgba(44, 44, 44, 0);
+}
