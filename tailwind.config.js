@@ -31,6 +31,18 @@ export default {
       width: {
         75: '18.0rem',
       },
+      animation: {
+        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      transitionDuration: {
+        2000: '2000ms',
+      },
+      keyframes: {
+        pulse: {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0.5 },
+        },
+      },
       textColor: ['placeholder'],
     },
   },

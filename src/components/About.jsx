@@ -6,71 +6,109 @@ import {
   FaFacebook,
   FaGlobe,
 } from 'react-icons/fa';
-function About() {
+import { useState } from 'react';
+
+function SocialLink({ href, children }) {
   return (
-    <div className='bg-dark-100 w-75 px-3 py-4 rounded-2xl mx-40 my-6 text-xs border border-light-10'>
+    <a
+      href={href}
+      className='mx-1 text-xl rotate-6 text-gray-300 bg-gray-darker rounded-full w-8 h-8 flex items-center justify-center hover:bg-light-10 transition ease-out duration-400'
+    >
+      {children}
+    </a>
+  );
+}
+
+function ContactLink({ href, children }) {
+  return (
+    <a
+      href={href}
+      className='flex items-center text-xs my-1 text-light-75 gap-1 hover:text-light-100 transition ease-out duration-500'
+    >
+      {children}
+    </a>
+  );
+}
+
+function Skill({ children }) {
+  return (
+    <li className=' bg-gray-darker rounded-md p-1 w-full text-center whitespace-nowrap'>
+      {children}
+    </li>
+  );
+}
+
+function About() {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+    setTimeout(() => setIsOpen(false), 6000);
+  };
+
+  return (
+    <div className='bg-dark-100 w-75 px-3 py-4 rounded-2xl mx-40 my-6 text-xs border border-light-10 fixed top-0 right-0'>
       <div className='flex flex-row flex-wrap'>
-        <div className='flex justify-between w-full'>
-          <img
-            className='w-24 rounded-full'
-            src='https://picsum.photos/200'
-            alt='Placeholder'
-          />
+        <div className='relative flex justify-between w-full'>
+          <div className='w-24 h-24 rounded-full overflow-hidden'>
+            <img
+              className='w-full h-full object-cover'
+              src='https://picsum.photos/200'
+              alt='Placeholder'
+            />
+            <div
+              className='absolute w-3 h-3 bg-green-500 rounded-full animate-pulse top-20 left-20 transform -translate-x-1/3 -translate-y-1/3 cursor-pointer'
+              onClick={handleClick}
+            ></div>
+            <div
+              className={`absolute top-3/4 left-24 text-green-500 bg-dark-100 text-xxs rounded-full p-1 border border-green-500 transition-opacity ease-out duration-1000 ${
+                isOpen ? 'opacity-100' : 'opacity-0'
+              }`}
+              style={{ visibility: isOpen ? 'visible' : 'hidden' }}
+            >
+              Open to freelancing
+            </div>
+          </div>
           <div className='flex'>
-            <a
-              href='#'
-              className='mx-1 text-xl rotate-6 text-gray-300 bg-gray-darker rounded-full w-8 h-8 flex items-center justify-center'
-            >
+            <SocialLink href='#'>
               <FaTwitter />
-            </a>
-            <a
-              href='#'
-              className='mx-1 text-xl rotate-6 text-gray-300 bg-gray-darker rounded-full w-8 h-8 flex items-center justify-center'
-            >
+            </SocialLink>
+            <SocialLink href='#'>
               <FaBook />
-            </a>
+            </SocialLink>
           </div>
         </div>
         <div className='mt-3'>
           <h1 className='font-bold text-2xl text-light-100'>
             Emmanuel Jirigho
           </h1>
-          <a href='' className='flex items-center text-xs my-1 text-light-75 gap-1'>
+          <ContactLink href=''>
             contact@EmmanuelJirigho.dev <FaEnvelope />
-          </a>
-          <a href='' className='flex items-center text-xs my-1 text-light-75 gap-1'>
+          </ContactLink>
+          <ContactLink href=''>
             emmaweyinmi@gmail.com <FaGlobe />
-          </a>
+          </ContactLink>
         </div>
       </div>
 
       <div className='w-full mt-3'>
         <ul className='flex mb-4 justify-between space-x-1'>
-          <li className=' bg-gray-darker rounded-md p-1 w-full text-center whitespace-nowrap'>
-            ReactJS
-          </li>
-          <li className=' bg-gray-darker rounded-md p-1 w-full text-center whitespace-nowrap'>
-            Git
-          </li>
-          <li className=' bg-gray-darker rounded-md p-1 w-full text-center whitespace-nowrap'>
-            NodeJS
-          </li>
-          <li className=' bg-gray-darker rounded-md p-1 w-full text-center whitespace-nowrap'>
-            Python developer
-          </li>
+          <Skill>ReactJS</Skill>
+          <Skill>Git</Skill>
+          <Skill>NodeJS</Skill>
+          <Skill>Python developer</Skill>
         </ul>
       </div>
-      <div className='bg-gray-darker h-10 rounded-lg mb-4 mt-5'>
+      <div className='bg-gray-darker h-8 rounded-lg mb-4 mt-5'>
         <form
           action=''
           className='flex items-center px-1 font-normal justify-center'
         >
           <input
-            className='bg-gray-darker h-10 rounded-l-lg  placeholder-light-50 focus:outline-none focus:ring-0 w-full px-2'
+            className='bg-gray-darker h-8 rounded-l-lg  placeholder-light-50 focus:outline-none focus:ring-0 w-full px-2'
             type='text'
             placeholder='name@gmail.com'
           />
-          <button className='bg-light-30 text-light-75 h-8 rounded-lg px-3 font-normal'>
+          <button className='bg-light-30 text-light-100 h-6 rounded-lg px-3 font-normal'>
             Subscribe
           </button>
         </form>
@@ -84,11 +122,11 @@ function About() {
       </div>
       <hr className='text-light-10 my-6' />
       <div className=''>
-        <h4 className='text-sm mb-2'>Work History</h4>
+        <h4 className='text-sm mb-3'>Work History</h4>
         <div className='flex justify-between'>
           <div className=''>
-            <h4 className='flex gap-2 text-sm'>
-              <i className='text-lg'>
+            <h4 className='flex gap-2 text-sm '>
+              <i className='text-lg relative top-1'>
                 <FaGoogle />
               </i>
               <div className=''>
@@ -102,7 +140,7 @@ function About() {
         <div className='flex justify-between'>
           <div className=''>
             <h4 className='flex gap-2 text-sm'>
-              <i className='text-lg'>
+              <i className='text-lg relative top-1'>
                 <FaFacebook />
               </i>
               <div className=''>
