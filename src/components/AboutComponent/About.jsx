@@ -7,36 +7,9 @@ import {
   FaGlobe,
 } from 'react-icons/fa';
 import { useState } from 'react';
-
-function SocialLink({ href, children }) {
-  return (
-    <a
-      href={href}
-      className='mx-1 text-xl rotate-6 text-gray-300 bg-gray-darker rounded-full w-8 h-8 flex items-center justify-center hover:bg-light-10 transition ease-out duration-400'
-    >
-      {children}
-    </a>
-  );
-}
-
-function ContactLink({ href, children }) {
-  return (
-    <a
-      href={href}
-      className='flex items-center text-xs my-1 text-light-75 gap-1 hover:text-light-100 transition ease-out duration-500'
-    >
-      {children}
-    </a>
-  );
-}
-
-function Skill({ children }) {
-  return (
-    <li className=' bg-gray-darker rounded-md p-1 w-full text-center whitespace-nowrap'>
-      {children}
-    </li>
-  );
-}
+import Skill from './Skill.jsx';
+import ContactLink from './ContactLink.jsx';
+import SocialLink from './SocialLink.jsx';
 
 function About() {
   const [isOpen, setIsOpen] = useState(false);
