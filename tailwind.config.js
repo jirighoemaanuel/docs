@@ -27,6 +27,7 @@ export default {
       fontSize: {
         xxs: '0.6rem',
         xxxs: '0.5rem',
+        xlg: '1.07rem',
       },
       width: {
         75: '18.0rem',
