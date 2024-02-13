@@ -19,7 +19,7 @@ function About() {
   };
 
   return (
-    <div className='bg-dark-100 w-75 px-3 py-4 rounded-2xl mx-40 my-6 text-xs border border-light-10 fixed'>
+    <div className='bg-dark-100 w-75 max-w-75 px-3 py-4 rounded-2xl mx-40 my-6 text-xs border border-light-10 fixed left-0'>
       <div className='flex flex-row flex-wrap'>
         <div className='relative flex justify-between w-full'>
           <div className='w-24 h-24 rounded-full overflow-hidden'>
@@ -42,10 +42,10 @@ function About() {
             </div>
           </div>
           <div className='flex'>
-            <SocialLink href='#'>
+            <SocialLink href='#' title='Twitter'>
               <FaTwitter />
             </SocialLink>
-            <SocialLink href='#'>
+            <SocialLink href='#' title='Read.CV'>
               <FaBook />
             </SocialLink>
           </div>

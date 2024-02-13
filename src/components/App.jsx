@@ -3,7 +3,8 @@ import Feature from './Feature/Feature';
 
 function App() {
   return (
-    <div>
+    <div className=''>
+    {/* <About /> */}
       <Feature />
     </div>
   );
