@@ -13,7 +13,7 @@ import SocialLink from '../About/SocialLink';
 
 function Feature() {
   return (
-    <div className='bg-dark-100 min-w-60 max-w-60 px-4 py-3 rounded-2xl mx-40 my-6 text-xs border border-light-10 fixed right-0'>
+    <div className='bg-dark-100 min-w-60 max-w-60 px-4 pt-3 pb-1 rounded-2xl mx-40 my-6 text-xs border border-light-10 fixed right-0'>
       <div>
         <h1 className='text-xlg mt-1 mb-2 text-light-100'>
           90+ Framer Shadows
@@ -28,7 +28,7 @@ function Feature() {
         </button>
         <hr className='text-light-10 my-1' />
       </div>
-      <div className='mt-3'>
+      <div className='mt-3 mb-6'>
         <h3 className='text-xlg  mb-4 text-light-100'>Featured In</h3>
         <ul className=''>
           <IconWithText
