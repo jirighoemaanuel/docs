@@ -1,4 +1,13 @@
-import { FaCodepen, FaCss3, FaGithub, FaInstagram, FaLinkedin, FaPython, FaRedditAlien, FaYoutube } from 'react-icons/fa';
+import {
+  FaCodepen,
+  FaCss3,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaPython,
+  FaRedditAlien,
+  FaYoutube,
+} from 'react-icons/fa';
 import IconWithText from './IconWithText';
 import SocialLink from '../About/SocialLink';
 
