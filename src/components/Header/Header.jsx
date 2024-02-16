@@ -2,8 +2,8 @@ import logo from '../../assets/htmltag.webp';
 
 function Header() {
   return (
-    <div>
-      <div className='mt-8'>
+    <div className='w-2/3'>
+      <div className='flex justify-center items-center mt-8'>
         <div className=''>
           <div className='flex gap-6 mb-8'>
             <img
