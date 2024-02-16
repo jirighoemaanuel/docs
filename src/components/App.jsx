@@ -1,13 +1,13 @@
-// import About from './About/About';
-// import Feature from './Feature/Feature';
+import About from './About/About';
+import Feature from './Feature/Feature';
 import Header from './Header/Header';
 
 function App() {
   return (
-    <div className=''>
-      {/* <About /> */}
+    <div className='flex justify-center items-start gap-10'>
+      <About />
       <Header />
-      {/* <Feature /> */}
+      <Feature />
     </div>
   );
 }

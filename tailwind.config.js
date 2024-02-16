@@ -29,6 +29,12 @@ export default {
         xxxs: '0.5rem',
         xlg: '1.07rem',
       },
+      minWidth: {
+        '3/4': '75%',
+      },
+      maxWidth: {
+        '3/4': '75%',
+      },
       width: {
         75: '18.0rem',
       },
