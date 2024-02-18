@@ -7,7 +7,7 @@ function Header() {
         <div className=''>
           <div className='flex gap-6 mb-8 px-4'>
             <img className='w-20' src={logo} alt='' />
-            <div className='p-r-10'>
+            <div className='pr-20'>
               <div className='gap-2 mb-2'>
                 <h1 className='text-xl text-light-100 font-bold inline'>
                   Semicolon
