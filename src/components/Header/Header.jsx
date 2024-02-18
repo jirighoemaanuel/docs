@@ -3,15 +3,11 @@ import logo from '../../assets/htmltag.webp';
 function Header() {
   return (
     <div className=''>
-      <div className='flex justify-center items-center mt-8'>
+      <div className='flex justify-center items-center mt-2'>
         <div className=''>
-          <div className='flex gap-6 mb-8'>
-            <img
-              className='bg-gray-dark rounded-lg text-xs border border-light-10 w-20'
-              src={logo}
-              alt=''
-            />
-            <div>
+          <div className='flex gap-6 mb-8 px-4'>
+            <img className='w-20' src={logo} alt='' />
+            <div className='p-r-10'>
               <div className='gap-2 mb-2'>
                 <h1 className='text-xl text-light-100 font-bold inline'>
                   Semicolon
@@ -28,7 +24,7 @@ function Header() {
               </div>
             </div>
           </div>
-          <hr className='text-light-10 my-1' />
+          <hr className='text-light-10 my-1 mb-10' />
         </div>
       </div>
       <div>
