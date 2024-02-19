@@ -36,7 +36,8 @@ export default {
         '3/4': '75%',
       },
       gridTemplateColumns: {
-        '1-2': '2fr 1.8fr',
+        '1-2': '1fr 1.8fr',
+        '2-1': '2fr 1.8fr',
       },
       width: {
         75: '18.0rem',

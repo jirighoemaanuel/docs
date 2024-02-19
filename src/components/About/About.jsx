@@ -42,7 +42,7 @@ function About() {
                 Open to freelancing
               </div>
             </div>
-            <div className='flex'>
+            <div className='flex h-0'>
               <SocialLink href='#' title='Twitter'>
                 <FaTwitter />
               </SocialLink>
