@@ -4,9 +4,9 @@ import Header from './Header/Header';
 
 function App() {
   return (
-    <div className='my-10 w-full'>
+    <div className='my-10'>
       <div className='xl:grid xl:grid-cols-3 gap-x-6'>
-        <div className='grid md:grid-cols-1-2 xl:grid-cols-2-1 gap-x-6 xl:col-span-2 '>
+        <div className='md:grid md:grid-cols-1-2 xl:grid-cols-2-1 gap-x-6 xl:col-span-2 sm:flex'>
           <div className=''>
             <About />
           </div>

@@ -3,11 +3,11 @@ import img1 from '../../assets/img1.webp';
 
 function Header() {
   return (
-    <div className='xl:max-w-full'>
+    <div className='xl:w-full md:w-500px'>
       <div className='flex justify-center items-center mt-2 '>
         <div className=''>
           <div className='flex gap-6 mb-8 px-4'>
-            <img className='hidden lg:block w-20' src={logo} alt='' />
+            <img className='hidden xl:block w-20' src={logo} alt='' />
             <div className='pr-20'>
               <div className='gap-2 mb-2'>
                 <h1 className='text-xl text-light-100 font-bold inline'>
