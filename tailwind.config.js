@@ -28,6 +28,7 @@ export default {
         mobile: '480px',
         tablet: '810px',
         laptop: '1200px',
+        desktop: '1400px',
       },
       fontSize: {
         xxs: '0.6rem',
