@@ -6,8 +6,8 @@ import Header from './Header/Header';
 function App() {
   return (
     <div className='flex justify-center laptop:max-w-[1200px] tablet:max-w-[810px] mx-auto '>
-      <div className='flex gap-x-4 desktop:flex-row flex-col'>
-        <div className='flex gap-x-4'>
+      <div className='flex gap-x-4'>
+        <div className='flex gap-x-4 flex-col tablet:flex-row'>
           <div className=''>
             <About />
           </div>
