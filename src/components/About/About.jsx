@@ -19,8 +19,8 @@ function About() {
   };
 
   return (
-    <div className='md:flex justify-end sm:block'>
-      <div className='bg-dark-100 w-75 md:max-w-75 px-3 py-4 rounded-2xl text-xs border border-light-10 md:fixed'>
+    <div className=''>
+      <div className='bg-dark-100 w-75 md:max-w-75 px-3 py-4 rounded-2xl text-xs border border-light-10 '>
         <div className='flex flex-row flex-wrap'>
           <div className='relative flex justify-between w-full'>
             <div className='w-24 h-24 rounded-full overflow-hidden'>

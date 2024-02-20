@@ -24,6 +24,11 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      screens: {
+        mobile: '480px',
+        tablet: '810px',
+        laptop: '1200px',
+      },
       fontSize: {
         xxs: '0.6rem',
         xxxs: '0.5rem',
@@ -36,12 +41,12 @@ export default {
         '3/4': '75%',
       },
       gridTemplateColumns: {
-        '1-2': '1fr 1.8fr',
+        '1-2': '1fr 2fr',
         '2-1': '2fr 1.8fr',
       },
       width: {
         75: '18.0rem',
-        '500px': '500px',
+        '440px': '440px',
       },
       animation: {
         pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
