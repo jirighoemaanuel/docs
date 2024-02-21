@@ -14,7 +14,7 @@ import SocialLink from '../About/SocialLink';
 function Feature() {
   return (
     <div className=''>
-      <div className='bg-dark-100 min-w-60 max-w-60 px-4 pt-3 pb-1 rounded-2xl text-xs border border-light-10'>
+      <div className='bg-dark-100 min-w-60 max-w-60 px-4 pt-3 pb-1 rounded-2xl text-xs border border-light-10 fixed'>
         <div>
           <h1 className='text-xlg mt-1 mb-2 text-light-100'>
             90+ Framer Shadows

@@ -16,3 +16,29 @@ body {
     --token-4a5d08d7-b41d-4b3c-bacb-b98815549889: rgb(44, 44, 44);
     --token-0e126b06-efe2-4318-8cf6-a714f5589896: rgba(44, 44, 44, 0);
 }
+
+import About from './About/About';
+import Feature from './Feature/Feature';
+import Header from './Header/Header';
+
+function App() {
+  return (
+    <div className='flex justify-center laptop:max-w-[1200px] tablet:max-w-[810px] mx-auto h-screen'>
+      <div className='flex gap-x-4 h-full'>
+        <div className='flex gap-x-4 flex-col tablet:flex-row'>
+          <div className='sticky top-0'>
+            <About />
+          </div>
+          <div className='overflow-y-auto'>
+            <Header />
+          </div>
+        </div>
+        <div className='sticky top-0 hidden laptop:block'>
+          <Feature />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;

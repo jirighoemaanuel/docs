@@ -10,6 +10,7 @@ import { useState } from 'react';
 import Skill from './Skill.jsx';
 import ContactLink from './ContactLink.jsx';
 import SocialLink from './SocialLink.jsx';
+import dp from '../../assets/soul.jpg';
 
 function About() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ function About() {
             <div className='w-24 h-24 rounded-full overflow-hidden'>
               <img
                 className='w-full h-full object-cover'
-                src='https://picsum.photos/200'
+                src={dp}
                 alt='Placeholder'
               />
               <div
@@ -90,8 +91,9 @@ function About() {
         <div>
           <h4 className='text-sm mb-2'>Bio</h4>
           <p className='mb-3'>
-            The world of digital design and development is constantly evolving
-            and so has my role over the last 7 years.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis sint
+            voluptatibus illo tempore quis expedita culpa? Rem a doloribus
+            dolorem!
           </p>
         </div>
         <hr className='text-light-10 my-6' />
@@ -104,7 +106,7 @@ function About() {
                   <FaGoogle />
                 </i>
                 <div className=''>
-                  <p>Sr. Developer</p>
+                  <p>Sr. Lorem ipsum</p>
                   <p className='text-xxs'>Google</p>
                 </div>
               </h4>
@@ -118,7 +120,7 @@ function About() {
                   <FaFacebook />
                 </i>
                 <div className=''>
-                  <p>Jr. Developer</p>
+                  <p>Jr. Lorem, ipsum.</p>
                   <p className='text-xxs'>Facebook</p>
                 </div>
               </h4>

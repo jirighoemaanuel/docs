@@ -3,7 +3,7 @@ import img1 from '../../assets/img1.webp';
 
 function Header() {
   return (
-    <div className='w-full'>
+    <div className='laptop:max-w-[610px] tablet:max-w-[506px]'>
       <div className='flex justify-center items-center mt-2'>
         <div className=''>
           <div className='flex gap-6 mb-8 px-4'>
