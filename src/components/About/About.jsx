@@ -20,7 +20,7 @@ function About() {
   };
 
   return (
-    <div className=''>
+    <div className='sticky top-0'>
       <div className='bg-dark-100 w-75 md:max-w-75 px-3 py-4 rounded-2xl text-xs border border-light-10'>
         <div className='flex flex-row flex-wrap'>
           <div className='relative flex justify-between w-full'>
@@ -83,7 +83,7 @@ function About() {
               type='text'
               placeholder='name@gmail.com'
             />
-            <button className='bg-light-30 text-light-100 h-6 rounded-lg px-3 font-normal'>
+            <button className='bg-light-30 text-light-100 h-6 rounded-sm px-3 font-normal'>
               Subscribe
             </button>
           </form>
