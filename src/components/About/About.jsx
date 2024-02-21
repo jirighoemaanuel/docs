@@ -20,7 +20,7 @@ function About() {
   };
 
   return (
-    <div className='sticky top-0'>
+    <div className='sticky top-[34px]'>
       <div className='bg-dark-100 w-75 md:max-w-75 px-3 py-4 rounded-2xl text-xs border border-light-10'>
         <div className='flex flex-row flex-wrap'>
           <div className='relative flex justify-between w-full'>
