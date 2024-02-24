@@ -1,11 +1,12 @@
-
 import About from './About/About';
 import Feature from './Feature/Feature';
 import Header from './Header/Header';
-import useScrollRestoration from './hooks/useScrollRestoration';
+import { useScrollRestoration } from './hooks/useScrollRestoration';
+// import { useEffect } froxdkm 'react';
 
 function App() {
   useScrollRestoration();
+  
 
   return (
     <div className='flex justify-center min-h-screen my-5 mx-8 animate-jiggly'>

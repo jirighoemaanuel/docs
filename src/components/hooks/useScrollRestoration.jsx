@@ -1,27 +1,27 @@
 import { useEffect } from 'react';
 
-const useScrollRestoration = () => {
+export const useScrollRestoration = () => {
   useEffect(() => {
-    const saveScrollPosition = () => {
-      localStorage.setItem('scrollPosition', JSON.stringify(window.scrollY));
-    };
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
 
-    const restoreScrollPosition = () => {
-      const scrollPosition = JSON.parse(localStorage.getItem('scrollPosition'));
-      if (scrollPosition) {
-        window.scrollTo(0, scrollPosition);
-      }
-    };
+    const scrollPosition = localStorage.getItem('scrollPosition');
 
-    window.addEventListener('beforeunload', saveScrollPosition);
-    window.addEventListener('resize', saveScrollPosition);
-    restoreScrollPosition();
+    if (scrollPosition) {
+      window.scrollTo(0, parseInt(scrollPosition));
+    } else {
+      window.scrollTo(0, 0);
+    }
+
+    window.addEventListener('beforeunload', () => {
+      localStorage.setItem('scrollPosition', window.pageYOffset.toString());
+    });
 
     return () => {
-      window.removeEventListener('beforeunload', saveScrollPosition);
-      window.removeEventListener('resize', saveScrollPosition);
+      window.removeEventListener('beforeunload', () => {
+        localStorage.setItem('scrollPosition', window.pageYOffset.toString());
+      });
     };
   }, []);
 };
-
-export default useScrollRestoration;

@@ -21,7 +21,7 @@ const Post = ({ img }) => {
 };
 
 Post.propTypes = {
-  img: PropTypes.img,
+  img: PropTypes.elementType,
 };
 
 export default Post;

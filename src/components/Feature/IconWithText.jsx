@@ -17,7 +17,7 @@ function IconWithText({ IconComponent, text }) {
 }
 
 IconWithText.propTypes = {
-  IconComponent: PropTypes.icon,
+  IconComponent: PropTypes.elementType,
   text: PropTypes.string.isRequired,
 };
 
