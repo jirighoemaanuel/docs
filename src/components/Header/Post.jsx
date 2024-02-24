@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Post = ({ img }) => {
   return (
-    <div className='bg-dark-100 px-5 py-4 rounded-lg hover:bg-light-10'>
+    <div className=' hover:bg-light-10 hover:rounded-none px-5 py-4 rounded-lg'>
       <div className='flex items-center gap-3'>
         <img
           className='w-24 h-24 rounded-lg border border-light-10'

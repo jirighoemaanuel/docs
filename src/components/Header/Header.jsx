@@ -29,7 +29,12 @@ function Header() {
           <hr className='text-light-10 my-1 mb-10 mx-2' />
         </div>
       </div>
-      <div className=''>
+      <div className='bg-dark-100 flex flex-col gap-y-6 rounded-lg'>
+        <Post img={img1} />
+        <Post img={img1} />
+        <Post img={img1} />
+        <Post img={img1} />
+        <Post img={img1} />
         <Post img={img1} />
       </div>
     </div>
