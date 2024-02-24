@@ -1,4 +1,3 @@
-// useScrollRestoration.js
 import { useEffect } from 'react';
 
 const useScrollRestoration = () => {
@@ -15,10 +14,12 @@ const useScrollRestoration = () => {
     };
 
     window.addEventListener('beforeunload', saveScrollPosition);
+    window.addEventListener('resize', saveScrollPosition);
     restoreScrollPosition();
 
     return () => {
       window.removeEventListener('beforeunload', saveScrollPosition);
+      window.removeEventListener('resize', saveScrollPosition);
     };
   }, []);
 };
