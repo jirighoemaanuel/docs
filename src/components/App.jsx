@@ -1,8 +1,12 @@
+import { useEffect } from 'react';
 import About from './About/About';
 import Feature from './Feature/Feature';
 import Header from './Header/Header';
+import useScrollRestoration from './hooks/useScrollRestoration';
 
 function App() {
+  useScrollRestoration();
+
   return (
     <div className='flex justify-center min-h-screen my-5 mx-8 animate-jiggly'>
       <div className='flex gap-x-6 h-full laptop:max-w-[1200px] tablet:max-w-[810px] '>
