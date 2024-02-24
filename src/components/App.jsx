@@ -4,14 +4,8 @@ import Header from './Header/Header';
 
 function App() {
   return (
-    <div
-      className='flex justify-center min-h-screen my-5 mx-8 animate-jiggly'
-      style={{ minHeight: '100vh' }}
-    >
-      <div
-        className='flex gap-x-6 h-full laptop:max-w-[1200px] tablet:max-w-[810px] '
-        style={{ minHeight: '100%' }}
-      >
+    <div className='flex justify-center min-h-screen my-5 mx-8 animate-jiggly'>
+      <div className='flex gap-x-6 h-full laptop:max-w-[1200px] tablet:max-w-[810px] '>
         <div className='flex gap-x-6 flex-col tablet:flex-row gap-y-6 mx-4 tablet:mx-0'>
           <div
             className='mx-auto About'

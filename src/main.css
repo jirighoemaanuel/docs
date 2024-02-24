@@ -29,7 +29,3 @@
   position: relative;
   animation: ripple 1s ease-out, upAndDown 0.5s ease-in-out 0.5s 3 forwards;
 }
-
-.min-h-screen {
-  height: 100vh;
-}
