@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types';
 
-const Post = ({ img }) => {
+const Post = ({ img, onClick }) => {
+  const handleClick = (event) => {
+    event.preventDefault();
+    onClick();
+  };
   return (
     <div className=' hover:bg-light-10 hover:rounded-none px-5 py-4 rounded-lg'>
       <div className='flex items-center gap-3'>
@@ -12,7 +16,9 @@ const Post = ({ img }) => {
         <div className='w-64 flex flex-col gap-3 font-semibold'>
           <p className='text-light-75 text-xs'>July 30, 2023</p>
           <p className='text-light-100'>
-            <a href=''>Smooth Animations With React and TailwindCSS</a>
+            <a href='' onClick={handleClick}>
+              Smooth Animations With React and TailwindCSS
+            </a>
           </p>
         </div>
       </div>
